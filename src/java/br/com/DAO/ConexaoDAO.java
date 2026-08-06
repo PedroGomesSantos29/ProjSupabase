@@ -25,7 +25,9 @@ public class ConexaoDAO {
             
             String usuario = "postgres";
             
-            String senha = "INFO#pg#290990#"; 
+           // String senha = "INFO#pg#290990#"; Obs.: Não suporta o # enxerga como delimitador
+
+            String senha = "INFOpg290990";
             
             con = DriverManager.getConnection(url, usuario, senha);
             
