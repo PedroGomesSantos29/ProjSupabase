@@ -21,7 +21,7 @@ public class ConexaoDAO {
         //base     String url = "jdbc:postgresql://db.seu_id_aqui.supabase.co:5432/postgres";
         
           
-            String url = "jdbc:postgresql://db.ajvhsqbnrigrapfrwviv.supabase.co:5432/postgres";
+            String url = "jdbc:postgresql://db.ajvhsqbnrigrapfrwviv.supabase.co:5432/postgressslmode=require";
             
             String usuario = "postgres";
             
