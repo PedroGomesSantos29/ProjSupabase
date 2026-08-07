@@ -30,10 +30,15 @@ public class ConexaoDAO {
             String senha = "INFOpg290990";
             
             con = DriverManager.getConnection(url, usuario, senha);
-            
-        } catch (SQLException e) {
-            System.err.println("Erro de Conexão: " + e.getMessage());
-        }
-        return con;           
+
+            } catch (ClassNotFoundException e) {
+        System.out.println("Driver JDBC nao encontrado: " + e.getMessage());
+        e.printStackTrace();
+    } catch (SQLException e) {
+        System.out.println("Erro de Conexao Postgres: " + e.getMessage());
+        e.printStackTrace();
     }
+    return con;
+            
+///////////////////      
 }
